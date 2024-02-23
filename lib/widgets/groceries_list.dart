@@ -93,11 +93,17 @@ class _GroceryListState extends State<GroceryList> {
         child:ListView.builder(
             itemCount: _groceryItems.length,
             itemBuilder: (ctx,index){
-              return ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: NetworkImage(_groceryItems[index].category.image),),
-                title:Text(_groceryItems[index].name) ,
-                trailing:Text(_groceryItems[index].quantity.toString(),style: TextStyle(color: _groceryItems[index].category.color),) ,
+              return Dismissible(
+                onDismissed: (direction) {
+                  _removeItem(_groceryItems[index]);
+                },
+                key: ValueKey(_groceryItems[index].id),
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: NetworkImage(_groceryItems[index].category.image),),
+                  title:Text(_groceryItems[index].name) ,
+                  trailing:Text(_groceryItems[index].quantity.toString(),style: TextStyle(color: _groceryItems[index].category.color),) ,
+                ),
               );
             }),);
     }
