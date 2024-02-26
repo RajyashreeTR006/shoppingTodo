@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:shopping_app/data/categories.dart';
-import 'package:shopping_app/models/category.dart';
 import 'package:shopping_app/models/grocery_item.dart';
 import 'package:shopping_app/widgets/newitem_list.dart';
 import 'package:http/http.dart' as http;
@@ -28,7 +27,7 @@ class _GroceryListState extends State<GroceryList> {
 
   void _loadItems() async {
     final url = Uri.https(
-        'flutter-prep-default-rtdb.firebaseio.com', 'shopping-list.json');
+        "shopping-api-a610e-default-rtdb.firebaseio.com","shopping-list.json");
     final response = await http.get(url);
     if(response.statusCode>=400){
       setState(() {
@@ -118,3 +117,4 @@ class _GroceryListState extends State<GroceryList> {
     );
   }
 }
+
