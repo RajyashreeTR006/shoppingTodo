@@ -10,7 +10,7 @@ const categories = {
   Categories.vegetables: Category(
     'Vegetables',
     Color.fromARGB(255, 0, 255, 128),
-      ''
+      'https://media.istockphoto.com/id/589415708/photo/fresh-fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=aBFGUU-98pnoht73co8r2TZIKF3MDtBBu9KSxtxK_C0='
   ),
   Categories.fruit: Category(
     'Fruit',
@@ -30,22 +30,22 @@ const categories = {
   Categories.carbs: Category(
     'Carbs',
     Color.fromARGB(255, 0, 60, 255),
-    'https://www.heart.org/-/media/Images/Healthy-Living/Healthy-Eating/Carbohydrates1.jpg'
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHrPtxyBKhXDxVW7Z9tKnUCEOxetcRFecQ4tYF8VoyJI4OXNwrRl5bWwqDIb8-MZHhu9E&usqp=CAU'
   ),
   Categories.sweets: Category(
     'Sweets',
     Color.fromARGB(255, 255, 149, 0),
-    'https://domf5oio6qrcr.cloudfront.net/medialibrary/9685/iStock-544807136.jpg'
+    'https://st.depositphotos.com/2702761/3312/i/450/depositphotos_33122479-stock-photo-traditional-indian-sweets.jpg'
   ),
   Categories.spices: Category(
     'Spices',
     Color.fromARGB(255, 255, 187, 0),
-      'https://domf5oio6qrcr.cloudfront.net/medialibrary/9685/iStock-544807136.jpg'
+      'https://t4.ftcdn.net/jpg/01/02/58/91/360_F_102589163_hk02O92vzEYP0rZbVyvDTbkje1GaUDk1.jpg'
   ),
   Categories.convenience: Category(
     'Convenience',
     Color.fromARGB(255, 191, 0, 255),
-    'https://domf5oio6qrcr.cloudfront.net/medialibrary/9685/iStock-544807136.jpg'
+    'https://t3.ftcdn.net/jpg/05/34/52/94/360_F_534529443_HGyGvhIXsXmYzlWASxN6u7GlDkIrulbt.jpg'
   ),
   Categories.hygiene: Category(
     'Hygiene',
@@ -55,6 +55,6 @@ const categories = {
   Categories.other: Category(
     'Other',
     Color.fromARGB(255, 0, 225, 255),
-    'https://st3.depositphotos.com/1593759/19345/i/450/depositphotos_193454324-stock-photo-shampoo-soap-bath-sponge-isolated.jpg'
+    'https://www.asianpaints.com/content/dam/asian_paints/colours/swatches/8232.png.transform/cc-width-720-height-540/image.png'
   ),
 };

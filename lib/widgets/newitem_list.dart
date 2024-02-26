@@ -136,8 +136,8 @@ class _NewItemListState extends State<NewItemList> {
                             child: Row(
                               children: [
                                 Container(
-                                  width: 16,
-                                  height: 16,
+                                  width: 20,
+                                  height: 20,
                                   child:CircleAvatar(
                                     backgroundImage: NetworkImage(category.value.image),),
                                   // color: category.value.color,
